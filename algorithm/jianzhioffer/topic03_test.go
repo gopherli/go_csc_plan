@@ -2,13 +2,13 @@ package jianzhioffer
 
 import "testing"
 
-func TestLookForARepeatingNumber(t *testing.T) {
+func Test_LookForARepeatingNumber(t *testing.T) {
 	nums := []int{1, 22, 3, 7, 31, 4, 22, 1, 7}
 	aRepeatingNum := LookForARepeatingNumber(nums)
 	t.Logf("LookForARepeatingNumber->result：%d", aRepeatingNum)
 }
 
-// https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/?favorite=xb9nqhhg
+// https://leetcode.cn/problems/shu-zu-zahong-zhong-fu-de-shu-zi-lcof/?favorite=xb9nqhhg
 func LookForARepeatingNumber(nums []int) int {
 	record := make(map[int]bool, 0)
 	for _, num := range nums {
