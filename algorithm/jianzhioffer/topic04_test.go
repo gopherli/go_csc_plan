@@ -1,7 +1,6 @@
 package jianzhioffer
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -11,7 +10,7 @@ func Test_FindANumIn2DArray(t *testing.T) {
 		{2, 3, 4},
 	}
 	result := FindANumIn2DArray(array, 4)
-	fmt.Println("FindANumIn2DArray->result：", result)
+	t.Logf("FindANumIn2DArray->result：%v", result)
 }
 
 // https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/?favorite=xb9nqhhg
